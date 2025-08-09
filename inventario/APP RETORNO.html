@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retorno App</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("C:/Users/Elvis/OneDrive/Desktop/inventario/foto_retorno.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contenedor-central {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contenido {
+  padding: 50px 20px;
+  background-color: rgba(255, 255, 255, 0.75); 
+  border-radius: 50px;
+  max-width: 600px;
+  color: #2c2c2c; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.opciones a {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 25px;
+  background: #3cb442;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background 0.3s;
+}
+
+.opciones a:hover {
+  background: #f7991f;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
+}
+/* Móviles pequeños (hasta 400px) */
+@media (max-width: 400px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  input, select, button {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .modal-content {
+    width: 95%;
+    height: 80vh;
+  }
+
+  iframe {
+    height: 70vh;
+  }
+}
+
+/* Móviles medianos y grandes (401px - 767px) */
+@media (min-width: 401px) and (max-width: 767px) {
+  input, select, button {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .modal-content {
+    width: 90%;
+    height: 85vh;
+  }
+
+  iframe {
+    height: 75vh;
+  }
+}
+
+/* Tablets (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  input, select, button {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .modal-content {
+    width: 80%;
+    height: 85vh;
+  }
+
+  iframe {
+    height: 80vh;
+  }
+}
+
+/* Laptops y escritorios pequeños (1024px - 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  input, select, button {
+    width: 60%;
+  }
+
+  .modal-content {
+    width: 70%;
+    height: 85vh;
+  }
+
+  iframe {
+    height: 85vh;
+  }
+}
+
+/* Pantallas grandes (1440px en adelante) */
+@media (min-width: 1440px) {
+  input, select, button {
+    width: 50%;
+  }
+
+  .modal-content {
+    width: 60%;
+    height: 85vh;
+  }
+
+  iframe {
+    height: 90vh;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="contenedor-central">
+    <div class="contenido">
+    <h2>Bienvenido a Retorno Bima</h2>
+    <p>¿Qué quieres hacer?</p>
+    <div class="opciones">
+      <a href="file:///C:/Users/elvis/OneDrive/Desktop/inventario/CARGAS.html">Documento de carga</a>
+      <a href="file:///C:/Users/elvis/OneDrive/Desktop/inventario/Inventario%20producto.html">Inventario refrigerado</a>
+      <a href="file:///C:/Users/elvis/OneDrive/Desktop/inventario/Reporte%20Novedades.html">Reporte novedades calle</a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Elvis Carmona. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
